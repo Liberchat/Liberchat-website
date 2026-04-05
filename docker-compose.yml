@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  liberchat-site:
+    image: liberchat/liberchat-site:latest
+    container_name: liberchat-site
+    ports:
+      - "8345:80"
+    restart: unless-stopped

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,10 @@
     <title>Liberchat</title>
     <link rel="icon" type="image/png" href="assets/icon.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+    <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700,800&display=swap"
         rel="stylesheet">
 </head>
 
@@ -19,24 +19,24 @@
 
     <nav>
         <div class="nav-content">
-            <div class="logo">
+            <a href="./" class="logo">
                 <img src="assets/icon.png" alt="Liberchat Logo" class="logo-img">
                 <span>Liberchat</span>
-            </div>
-            <button class="menu-toggle">
+            </a>
+            <button class="menu-toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-links">
-                <li><a href="./" class="active">Accueil</a></li>
-                <li><a href="./roadmap.html">Feuille de route</a></li>
-                <li><a href="releases.html"> Android</a></li>
-                <li><a href="releases-linux.html"> Linux</a></li>
+                <li><a href="./" class="active">Home</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="releases.html">Android</a></li>
+                <li><a href="releases-linux.html">Linux</a></li>
                 <li><a href="releases-windows.html">Windows</a></li>
                 <li><a href="releases-macos.html">MacOS</a></li>
-                <li><a href="installation-apk.html">Installation mobile</a></li>
-                <li><a href="autohebergement.html">Auto-hébergement</a></li>
+                <li><a href="installation-apk.html">Installation</a></li>
+                <li><a href="autohebergement.html">Hosting</a></li>
                 <li><a href="docker.html">Docker</a></li>
-
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
         </div>
     </nav>
@@ -44,22 +44,21 @@
     <header class="hero">
         <div class="hero-content">
             <h1>Liberchat</h1>
-            <p class="tagline"
-                data-text="La communication libre, sécurisée et décentralisée pour une nouvelle ère numérique">La
-                communication libre, sécurisée et décentralisée pour une nouvelle ère numérique</p>
+            <p class="tagline" data-text="Free, secure, and decentralized communication for a new digital era">Free,
+                secure, and decentralized communication for a new digital era</p>
             <div class="cta-buttons">
                 <a href="#download" class="cta-primary">
                     <i class="fas fa-download"></i>
-                    Télécharger
+                    Download
                 </a>
                 <a href="./faq.html" class="cta-secondary">
                     <i class="fas fa-info-circle"></i>
-                    En savoir plus
+                    Learn more
                 </a>
                 <a href="https://liberchat.cnt-ait-contact.noho.st/liberchat/" class="cta-open-webapp" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fas fa-rocket"></i>
-                    Lancer l'app web
+                    Launch web app
                 </a>
             </div>
         </div>
@@ -67,107 +66,108 @@
 
 
     <section id="features" class="features">
-        <h2>Caractéristiques Révolutionnaires</h2>
+        <h2>Revolutionary Features</h2>
         <div class="feature-grid">
             <div class="feature-card">
                 <i class="fas fa-shield-alt"></i>
-                <h3>Chiffrement de bout en bout</h3>
-                <p>Protection militaire pour vos conversations. Vos messages restent privés, toujours et partout.</p>
+                <h3>End-to-end encryption</h3>
+                <p>Military-grade protection for your conversations. Your messages remain private, always and
+                    everywhere.</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-network-wired"></i>
-                <h3>Architecture décentralisée</h3>
-                <p>Aucun point de défaillance unique. Résistant à la censure et aux pannes centralisées.</p>
+                <h3>Decentralized architecture</h3>
+                <p>No single point of failure. Resistant to censorship and centralized outages.</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-code-branch"></i>
                 <h3>100% Open Source</h3>
-                <p>Code auditable et transparent. La communauté peut vérifier chaque ligne de code.</p>
+                <p>Auditable and transparent code. The community can verify every line of code.</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-user-secret"></i>
-                <h3>Anonymat total</h3>
-                <p>Votre identité numérique vous appartient. Communiquez sans laisser de traces.</p>
+                <h3>Total anonymity</h3>
+                <p>Your digital identity belongs to you. Communicate without leaving a trace.</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-globe"></i>
-                <h3>Multi-plateforme</h3>
-                <p>Disponible sur tous vos appareils. Une expérience unifiée partout.</p>
+                <h3>Multi-platform</h3>
+                <p>Available on all your devices. A unified experience everywhere.</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-tachometer-alt"></i>
-                <h3>Performance optimale</h3>
-                <p>Rapide et léger. Conçu pour une expérience utilisateur fluide et réactive.</p>
+                <h3>Optimal performance</h3>
+                <p>Fast and lightweight. Designed for a smooth and responsive user experience.</p>
             </div>
         </div>
     </section>
 
     <section id="download" class="download">
-        <h2>Téléchargez Liberchat</h2>
+        <h2>Download Liberchat</h2>
         <div class="download-options">
             <div class="download-card windows">
                 <i class="fab fa-windows"></i>
                 <h3>Windows 10/11</h3>
-                <p>Version optimisée pour Windows moderne</p>
+                <p>Optimized version for modern Windows</p>
                 <a href="https://github.com/Liberchat/Liberchat-win10-11/releases/download/2.0.1/Liberchat-Setup-2.0.1.exe"
                     class="download-button">
                     <i class="fas fa-download"></i>
-                    Télécharger v2.0.1
+                    Download v2.0.1
                 </a>
             </div>
             <div class="download-card linux">
                 <i class="fab fa-linux"></i>
                 <h3>Linux</h3>
-                <p>AppImage universelle pour toutes les distributions</p>
+                <p>Universal AppImage for all distributions</p>
                 <a href="https://github.com/Liberchat/Liberchat-Linux/releases/download/v2.0.1/Liberchat-2.0.1-linux.AppImage"
                     class="download-button">
                     <i class="fas fa-download"></i>
-                    Télécharger AppImage
+                    Download AppImage
                 </a>
             </div>
             <div class="download-card android">
                 <i class="fab fa-android"></i>
                 <h3>Android</h3>
-                <p>Installation directe ou via QR code</p>
+                <p>Direct installation or via QR code</p>
                 <div class="download-buttons">
                     <a href="https://github.com/Liberchat/Liberchat-android/releases/download/v3.6.0/Liberchat-3.6.0.apk"
                         class="download-button apk">
                         <i class="fas fa-download"></i>
-                        Télécharger APK v3.6.0
+                        Download APK v3.6.0
                     </a>
                     <a href="qr.html" class="download-button qr">
                         <i class="fas fa-qrcode"></i>
-                        Scanner QR Code
+                        Scan QR Code
                     </a>
                 </div>
             </div>
             <div class="download-card macos">
                 <i class="fab fa-apple"></i>
                 <h3>macOS</h3>
-                <p>Compatible Intel et Apple Silicon</p>
+                <p>Intel and Apple Silicon compatible</p>
                 <a href="https://github.com/Liberchat/Liberchat-macOS/releases/download/v2.0.1/Liberchat-2.0.1-macos.dmg"
                     class="download-button">
                     <i class="fas fa-download"></i>
-                    Télécharger v2.0.1
+                    Download v2.0.1
                 </a>
             </div>
             <div class="download-card ios coming-soon">
                 <i class="fab fa-apple"></i>
                 <h3>iOS</h3>
-                <p>En développement actif</p>
+                <p>Active development</p>
                 <span class="coming-soon-label">
                     <i class="fas fa-clock"></i>
-                    Disponible fin 2026
+                    Available late 2026
                 </span>
             </div>
             <div class="download-card themes">
                 <i class="fas fa-palette"></i>
-                <h3>Thèmes</h3>
-                <p>Personnalisez votre interface</p>
+                <h3>Themes</h3>
+                <p>Personalize your interface</p>
                 <a href="https://github.com/Liberchat/Liberchat-th-mes" class="download-button" target="_blank"
                     rel="noopener noreferrer">
                     <i class="fas fa-download"></i>
-                    Télécharger thèmes
+                    Download themes
                 </a>
             </div>
         </div>
@@ -175,16 +175,16 @@
 
     <section id="about" class="about">
         <div class="about-content">
-            <h2>Pourquoi Liberchat ?</h2>
-            <p>Dans un monde où la surveillance de masse est devenue la norme, Liberchat se dresse comme un bastion de
-                la liberté numérique. Nous croyons en un internet libre, sécurisé et accessible à tous.</p>
+            <h2>Why Liberchat?</h2>
+            <p>In a world where mass surveillance has become the norm, Liberchat stands as a bastion of digital freedom.
+                We believe in a free, secure, and accessible internet for everyone.</p>
             <div class="manifesto">
-                <h3>Notre Manifeste</h3>
+                <h3>Our Manifesto</h3>
                 <ul>
-                    <li>La vie privée est un droit fondamental</li>
-                    <li>La décentralisation est la clé de la liberté</li>
-                    <li>Le code doit être libre et transparent</li>
-                    <li>La communauté avant tout</li>
+                    <li>Privacy is a fundamental right</li>
+                    <li>Decentralization is the key to freedom</li>
+                    <li>Code must be free and transparent</li>
+                    <li>Community above all</li>
                 </ul>
             </div>
         </div>
@@ -194,49 +194,51 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Liberchat</h4>
-                <p>Communication libre et sécurisée pour tous.</p>
+                <p>Free and secure communication for everyone.</p>
                 <div class="legal-links">
                     <a href="privacy.html" class="legal-link">
-                        <i class="fas fa-shield-alt"></i> Politique de confidentialité
+                        <i class="fas fa-shield-alt"></i> Privacy Policy
                     </a>
                     <a href="privacy.html#rgpd" class="legal-link">
-                        <i class="fas fa-gavel"></i> Conformité RGPD
+                        <i class="fas fa-gavel"></i> GDPR Compliance
                     </a>
                 </div>
             </div>
             <div class="footer-section">
-                <h4>Liens</h4>
+                <h4>Links</h4>
                 <ul>
                     <li><a href="https://github.com/Liberchat/liberchatserver_ynh">GitHub App</a></li>
                     <li><a href="https://github.com/Liberchat/Liberchat-site">GitHub Site</a></li>
                     <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="privacy.html">Mentions légales</a></li>
+                    <li><a href="privacy.html">Legal Mentions</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Communauté</h4>
+                <h4>Community</h4>
                 <ul>
+                    <li><a href="https://militant.revlibertaire.com/group_detail.php?id=6" class="community-link">
+                            <img src="https://militant.revlibertaire.com/assets/favicon.svg" alt="Militant Logo" style="width: 1.2rem; height: 1.2rem; vertical-align: middle; margin-right: 0.5rem;"> Militant
+                        </a></li>
                     <li><a href="https://www.facebook.com/groups/1056100956078058" class="community-link">
-                            <i class="fab fa-facebook"></i> Groupe Facebook
+                            <i class="fab fa-facebook"></i> Facebook Group
                         </a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h4>Protection des données</h4>
-                <p>Vos données vous appartiennent.</p>
+                <h4>Data Protection</h4>
+                <p>Your data belongs to you.</p>
                 <ul>
-                    <li>✓ Chiffrement de bout en bout</li>
-                    <li>✓ Pas de tracking</li>
+                    <li>✓ End-to-end encryption</li>
+                    <li>✓ No tracking</li>
                     <li>✓ Open source</li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; <span class="current-year"></span> Liberchat - Logiciel Libre</p>
+            <p>&copy; <span class="current-year"></span> Liberchat - Free Software</p>
             <p class="gdpr-notice">
-                Liberchat respecte votre vie privée. Nous n'utilisons aucun cookie et ne collectons aucune donnée
-                personnelle.
-                <a href="privacy.html" class="privacy-link">En savoir plus</a>
+                Liberchat respects your privacy. We do not use any cookies and do not collect any personal data.
+                <a href="privacy.html" class="privacy-link">Learn more</a>
             </p>
         </div>
     </footer>

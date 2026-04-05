@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Mise à jour automatique de l'année
+    // Automatic year update
     const yearElements = document.querySelectorAll('.current-year');
     const currentYear = new Date().getFullYear();
     yearElements.forEach(el => {
         el.textContent = currentYear;
     });
 
-    // Animation pour les éléments au scroll
+    // Animation for elements on scroll
     const observerOptions = {
         threshold: 0.1
     };
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Navigation sticky avec effet de transparence
+    // Sticky navigation with transparency effect
     const nav = document.querySelector('nav');
     let lastScroll = 0;
 
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScroll = currentScroll;
     });
 
-    // Effet de parallaxe sur le hero
+    // Parallax effect on the hero
     const hero = document.querySelector('.hero');
     if (hero) {
         window.addEventListener('scroll', () => {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Animation du logo au hover
+    // Logo animation on hover
     const logo = document.querySelector('.logo');
     if (logo) {
         logo.addEventListener('mouseenter', () => {
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             logo.style.transform = 'scale(1)';
         });
 
-        // Easter egg anarchiste
+        // Anarchist Easter egg
         let clicks = 0;
         const easterEggColors = ['#ff2800', '#000000'];
         logo.addEventListener('click', () => {
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Gestion du menu mobile (menu burger)
+    // Mobile menu management (burger menu)
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     if (menuToggle && navLinks) {
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Styles pour l'animation du poing levé
+// Styles for the raised fist animation
 const style = document.createElement('style');
 style.textContent = `
     @keyframes fistPump {

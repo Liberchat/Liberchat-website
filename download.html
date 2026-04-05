@@ -1,75 +1,69 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Télécharger LiberChat</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #1a1a1a;
-            color: white;
-        }
-        .container {
-            text-align: center;
-        }
-        .download-btn {
-            display: inline-block;
-            background: #ff4444;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 20px;
-            font-size: 18px;
-        }
-        .logo {
-            width: 150px;
-            margin: 20px;
-        }
-        .features {
-            text-align: left;
-            margin: 20px;
-            padding: 20px;
-            background: #333;
-            border-radius: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+    <link href="https://fonts.bunny.net/css?family=inter:300,400,600,700,800,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <nav>
+        <div class="nav-content">
+            <a href="./" class="logo">
+                <img src="assets/icon.png" alt="Liberchat Logo" class="logo-img">
+                <span>Liberchat</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="./">Home</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="releases.html">Android</a></li>
+                <li><a href="releases-linux.html">Linux</a></li>
+                <li><a href="releases-windows.html">Windows</a></li>
+                <li><a href="releases-macos.html">MacOS</a></li>
+                <li><a href="installation-apk.html">Installation</a></li>
+                <li><a href="autohebergement.html">Hosting</a></li>
+                <li><a href="docker.html">Docker</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-        <img src="images/liberchat-logo.svg" alt="LiberChat Logo" class="logo">
-        <h1>Télécharger LiberChat</h1>
-        <p>Application de chat en temps réel avec logo anarchiste</p>
+        <img src="images/liberchat-logo.svg" alt="Liberchat Logo" class="logo">
+        <h1>Download Liberchat</h1>
+        <p>Real-time chat application with anarchist logo</p>
         
-        <a href="https://github.com/AnARCHIS12/Liberchat-3.0/releases/download/beta-1.0.0/liberchat-1.0.0-beta-a-only.apk" class="download-btn">
-            📱 Télécharger l'APK
+        <a href="https://github.com/Liberchat/releases/download/beta-1.0.0/liberchat-1.0.0-beta-a-only.apk" class="download-btn">
+            📱 Download APK
         </a>
 
         <div class="features">
-            <h2>✨ Fonctionnalités</h2>
+            <h2>✨ Features</h2>
             <ul>
-                <li>💬 Chat en temps réel</li>
-                <li>🎨 Interface moderne avec thème sombre</li>
-                <li>🔒 Sécurisé</li>
-                <li>🎯 Logo anarchiste personnalisé</li>
+                <li>💬 Real-time chat</li>
+                <li>🎨 Modern interface with dark theme</li>
+                <li>🔒 Secure</li>
+                <li>🎯 Custom anarchist logo</li>
             </ul>
         </div>
 
         <h2>📱 Installation</h2>
         <ol style="text-align: left;">
-            <li>Téléchargez l'APK en cliquant sur le bouton ci-dessus</li>
-            <li>Sur votre Android, autorisez l'installation depuis des sources inconnues</li>
-            <li>Ouvrez le fichier APK téléchargé</li>
-            <li>Suivez les instructions d'installation</li>
+            <li>Download the APK by clicking the button above</li>
+            <li>On your Android, allow installation from unknown sources</li>
+            <li>Open the downloaded APK file</li>
+            <li>Follow the installation instructions</li>
         </ol>
 
         <p>
-            <a href="https://github.com/AnARCHIS12/Liberchat-3.0" style="color: #ff4444;">
-                Voir le code source sur GitHub
+            <a href="https://github.com/Liberchat" style="color: #ff4444;">
+                View source code on GitHub
             </a>
         </p>
     </div>

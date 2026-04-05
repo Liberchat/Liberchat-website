@@ -1,4 +1,10 @@
-# Liberchat Site Web
+
+
+# Liberchat Website
+
+<p align="left">
+  <img src="assets/icon.png" alt="Liberchat Logo" width="128" />
+</p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -6,89 +12,106 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen)](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
 [![Open Source](https://img.shields.io/badge/Open%20Source-❤️-red)](https://opensource.org/)
-[![GitHub Stars](https://img.shields.io/github/stars/AnARCHIS12/liberchat-site?style=social)](https://github.com/AnARCHIS12/liberchat-site)
+[![GitHub Stars](https://img.shields.io/github/stars/Liberchat/liberchat-site?style=social)](https://github.com/Liberchat/liberchat-site)
 
-Site web officiel de Liberchat - Application de messagerie libre et sécurisée.
+Official Liberchat website - Free and secure messaging application.
 
-##  Aperçu
+## Overview
 
-Ce repository contient le code source du site web officiel de Liberchat, une application de messagerie décentralisée avec chiffrement de bout en bout.
+This repository contains the source code for the official Liberchat website, a decentralized messaging application with end-to-end encryption.
 
-**URL du site :** [liberchat.netlify.app](liberchat.netlify.app)
+**Website URL:** [https://liberchat.unionlibertaireanarchiste.org](https://liberchat.unionlibertaireanarchiste.org)
 
-##  Fonctionnalités du site
+## Website Features
 
-- **Page d'accueil** - Présentation de Liberchat et téléchargements
-- **Feuille de route** - Évolution du projet et versions futures
-- **FAQ** - Questions fréquentes avec système d'accordéon
-- **Mentions légales** - Politique de confidentialité et conformité RGPD
-- **Pages de téléchargement** - Pour chaque plateforme (Windows, Linux, macOS, Android)
-- **Auto-hébergement** - Guide pour héberger son propre serveur (YunoHost)
-- **Docker** - Test en local et développement rapide
-- **Design responsive** - Compatible mobile et desktop
+- **Home Page** - Introduction to Liberchat and downloads
+- **Roadmap** - Project evolution and future versions
+- **FAQ** - Frequently asked questions with an accordion system
+- **Legal Mentions** - Privacy policy and GDPR compliance
+- **Download Pages** - For each platform (Windows, Linux, macOS, Android)
+- **Self-hosting** - Guide to hosting your own server (YunoHost)
+- **Docker** - Local testing and rapid development
+- **Responsive Design** - Mobile and desktop compatible
 
-##  Technologies utilisées
+## Technologies Used
 
-- **HTML5** - Structure sémantique
-- **CSS3** - Styles modernes avec variables CSS
-- **JavaScript** - Interactions et animations
-- **Font Awesome** - Icônes
-- **Google Fonts** - Typographie (Inter)
+- **HTML5** - Semantic structure
+- **CSS3** - Modern styles with CSS variables
+- **JavaScript** - Interactions and animations
+- **Font Awesome** - Icons
+- **Google Fonts** - Typography (Inter)
 
-##  Structure du projet
+## Project Structure
 
 ```
 liberchat/
-├── index.html              # Page d'accueil
-├── roadmap.html            # Feuille de route
-├── faq.html                # Questions fréquentes
-├── privacy.html            # Mentions légales
-├── releases.html           # Téléchargements Android
-├── releases-linux.html     # Téléchargements Linux
-├── releases-windows.html   # Téléchargements Windows
-├── releases-macos.html     # Téléchargements macOS
-├── installation-apk.html   # Guide installation mobile
-├── autohebergement.html    # Guide auto-hébergement YunoHost
-├── docker.html             # Guide Docker pour développement
-├── qr.html                 # QR codes pour mobile
-├── styles.css              # Styles principaux
-├── script.js               # Scripts JavaScript
-├── modern-interactions.js  # Animations avancées
-├── assets/                 # Images et ressources
-│   └── icon.png           # Logo Liberchat
-├── README.md              # Ce fichier
-└── LICENSE                # Licence du projet
+├── index.html              # Home page
+├── roadmap.html            # Roadmap
+├── faq.html                # Frequently asked questions
+├── privacy.html            # Legal mentions
+├── releases.html           # Android downloads
+├── releases-linux.html     # Linux downloads
+├── releases-windows.html   # Windows downloads
+├── releases-macos.html     # macOS downloads
+├── installation-apk.html   # Mobile installation guide
+├── autohebergement.html    # YunoHost self-hosting guide
+├── docker.html             # Docker guide for development
+├── qr.html                 # QR codes for mobile
+├── styles.css              # Main styles
+├── script.js               # JavaScript scripts
+├── modern-interactions.js  # Advanced animations
+├── assets/                 # Images and resources
+│   └── icon.png           # Liberchat logo
+├── Dockerfile             # Docker configuration
+├── docker-compose.yml     # Docker compose setup
+├── .dockerignore          # Docker ignore file
+├── README.md              # This file
+└── LICENSE                # Project license
 ```
 
-##  Installation locale
+## Local Installation
 
-1. **Cloner le repository**
+### Method 1: Using Docker (Recommended)
+
+1. **Download the project** (or clone the repository)
+2. **Start with Docker Compose**
    ```bash
-   git clone https://github.com/AnARCHIS12/liberchat-site.git
+   docker-compose up -d
+   ```
+3. **Open in the browser**
+   ```
+   http://localhost:8345
+   ```
+
+### Method 2: Manual Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Liberchat/liberchat-site.git
    cd liberchat-site
    ```
 
-2. **Serveur local**
+2. **Local server**
    ```bash
-   # Avec Python
+   # With Python
    python -m http.server 8000
    
-   # Avec Node.js
+   # With Node.js
    npx serve .
    
-   # Avec PHP
+   # With PHP
    php -S localhost:8000
    ```
 
-3. **Ouvrir dans le navigateur**
+3. **Open in the browser**
    ```
    http://localhost:8000
    ```
 
-##  Personnalisation
+## Customization
 
-### Variables CSS
-Le site utilise des variables CSS pour faciliter la personnalisation :
+### CSS Variables
+The site uses CSS variables to facilitate customization:
 
 ```css
 :root {
@@ -100,52 +123,53 @@ Le site utilise des variables CSS pour faciliter la personnalisation :
 }
 ```
 
-### Thèmes
-- **Thème sombre** - Par défaut
-- **Mode responsive** - Adaptation automatique mobile/desktop
-- **Animations** - Transitions fluides et effets hover
+### Themes
+- **Dark Theme** - Default
+- **Responsive Mode** - Automatic mobile/desktop adaptation
+- **Animations** - Smooth transitions and hover effects
 
-##  Compatibilité
+## Compatibility
 
-- **Navigateurs modernes** - Chrome, Firefox, Safari, Edge
-- **Responsive design** - Mobile, tablette, desktop
-- **Performance** - Optimisé pour le chargement rapide
-- **Accessibilité** - Standards WCAG respectés
+- **Modern Browsers** - Chrome, Firefox, Safari, Edge
+- **Responsive Design** - Mobile, tablet, desktop
+- **Performance** - Optimized for fast loading
+- **Accessibility** - WCAG standards respected
 
-##  Contribution
+## Contribution
 
-Les contributions sont les bienvenues ! Pour contribuer :
+Contributions are welcome! To contribute:
 
-1. **Fork** le projet
-2. **Créer** une branche pour votre fonctionnalité
-3. **Commit** vos changements
-4. **Push** vers la branche
-5. **Ouvrir** une Pull Request
+1. **Fork** the project
+2. **Create** a branch for your feature
+3. **Commit** your changes
+4. **Push** to the branch
+5. **Open** a Pull Request
 
 ### Guidelines
-- Respecter la structure HTML sémantique
-- Utiliser les variables CSS existantes
-- Tester sur mobile et desktop
-- Optimiser les images et ressources
+- Respect semantic HTML structure
+- Use existing CSS variables
+- Test on mobile and desktop
+- Optimize images and resources
 
-##  Licence
+## License
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+This project is under the MIT license. See the [LICENSE](LICENSE) file for more details.
 
-##  Liens utiles
+## Useful Links
 
-- **Application Liberchat** - [GitHub](https://github.com/AnARCHIS12/Liberchat-3.0)
-- **Auto-hébergement YunoHost** - [GitHub](https://github.com/Liberchat/liberchatserver_ynh)
+- **Liberchat Application** - [GitHub](https://github.com/Liberchat/Liberchat)
+- **YunoHost Self-hosting** - [GitHub](https://github.com/Liberchat/liberchatserver_ynh)
 - **Docker** - [GitHub](https://github.com/Liberchat/Liberchat-docker)
-- **Facebook** - [Groupe Facebook](https://www.facebook.com/groups/1056100956078058)
-- **Téléchargements** - [Releases](https://github.com/Liberchat)
+- **Militant** - <img src="https://militant.revlibertaire.com/assets/favicon.svg" alt="Militant Logo" width="16" height="16" style="vertical-align: middle;"> [Join Militant](https://militant.revlibertaire.com/group_detail.php?id=6)
+- **Facebook** - [Facebook Group](https://www.facebook.com/groups/1056100956078058)
+- **Downloads** - [Releases](https://github.com/Liberchat)
 
-##  Contact
+## Contact
 
-
-- **GitHub Issues** - Pour les bugs et suggestions
+- **GitHub Issues** - For bugs and suggestions
 - **Email** - anarchymedialibertaire@gmail.com
 
 ---
 
-**Liberchat** - Communication libre et sécurisée pour tous 🔒
+**Liberchat** - Free and secure communication for everyone 🔒
+

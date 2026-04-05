@@ -1,6 +1,6 @@
-// Interactions modernes pour Liberchat
+// Modern interactions for Liberchat
 document.addEventListener('DOMContentLoaded', () => {
-    // Animation d'apparition progressive des éléments
+    // Progressive element entrance animation
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Observer tous les éléments avec animation
+    // Observe all animated elements
     document.querySelectorAll('.feature-card, .download-card, .about-content').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Effet de parallaxe subtil sur le hero
+    // Subtle parallax effect on the hero
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
         const hero = document.querySelector('.hero');
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Animation des compteurs (si présents)
+    // Counter animation (if present)
     const animateCounters = () => {
         document.querySelectorAll('[data-count]').forEach(counter => {
             const target = parseInt(counter.getAttribute('data-count'));
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Effet de typing pour le tagline
+    // Typing effect for the tagline
     const typeWriter = (element, text, speed = 50) => {
         let i = 0;
         element.textContent = '';
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, speed);
     };
 
-    // Appliquer l'effet typing au tagline
+    // Apply typing effect to the tagline
     const tagline = document.querySelector('.tagline');
     if (tagline) {
         const originalText = tagline.getAttribute('data-text') || tagline.textContent;
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1500);
     }
 
-    // Effet de hover avancé sur les cartes
+    // Advanced hover effect on cards
     document.querySelectorAll('.feature-card, .download-card').forEach(card => {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-10px) scale(1.02)';
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Smooth scroll amélioré pour les liens internes
+    // Improved smooth scroll for internal links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Effet de particules subtiles (optionnel)
+    // Subtle particle effect (optional)
     const createParticles = () => {
         const hero = document.querySelector('.hero');
         if (!hero) return;
@@ -129,16 +129,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Créer les particules après un délai
+    // Create particles after a delay
     setTimeout(createParticles, 2000);
 
-    // Gestion du thème (si nécessaire)
+    // Theme management (if necessary)
     const toggleTheme = () => {
         document.body.classList.toggle('light-theme');
         localStorage.setItem('theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
     };
 
-    // Restaurer le thème sauvegardé
+    // Restore saved theme
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
         document.body.classList.add('light-theme');
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const handleScroll = () => {
         if (!ticking) {
             requestAnimationFrame(() => {
-                // Scroll handlers ici
+                // Scroll handlers here
                 ticking = false;
             });
             ticking = true;
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
 });
 
-// Styles CSS pour les animations additionnelles
+// CSS styles for additional animations
 const additionalStyles = `
     @keyframes float {
         0%, 100% { 
@@ -184,7 +184,7 @@ const additionalStyles = `
         will-change: transform;
     }
 
-    /* Thème clair (optionnel) */
+    /* Light theme (optional) */
     .light-theme {
         --background-color: #ffffff;
         --text-color: #333333;
@@ -192,7 +192,7 @@ const additionalStyles = `
     }
 `;
 
-// Injecter les styles additionnels
+// Inject additional styles
 const styleSheet = document.createElement('style');
 styleSheet.textContent = additionalStyles;
 document.head.appendChild(styleSheet);

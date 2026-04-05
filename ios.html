@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LiberChat pour iOS</title>
+    <title>Liberchat for iOS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+    <link href="https://fonts.bunny.net/css?family=inter:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Inter', Arial, sans-serif;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
@@ -39,44 +44,68 @@
     </style>
 </head>
 <body>
+    <nav>
+        <div class="nav-content">
+            <a href="./" class="logo">
+                <img src="assets/icon.png" alt="Liberchat Logo" class="logo-img">
+                <span>Liberchat</span>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="./">Home</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="releases.html">Android</a></li>
+                <li><a href="releases-linux.html">Linux</a></li>
+                <li><a href="releases-windows.html">Windows</a></li>
+                <li><a href="releases-macos.html">MacOS</a></li>
+                <li><a href="installation-apk.html">Installation</a></li>
+                <li><a href="autohebergement.html">Hosting</a></li>
+                <li><a href="docker.html">Docker</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
-        <img src="images/liberchat-logo.svg" alt="LiberChat Logo" class="logo">
-        <h1>LiberChat pour iOS</h1>
+        <img src="images/liberchat-logo.svg" alt="Liberchat Logo" class="logo">
+        <h1>Liberchat for iOS</h1>
         
         <div class="step">
-            <h2>1️⃣ Installer AltStore</h2>
+            <h2>1️⃣ Install AltStore</h2>
             <ol>
-                <li>Visitez <a href="https://altstore.io" style="color: #ff4444;">altstore.io</a></li>
-                <li>Téléchargez et installez AltServer sur votre Mac ou PC</li>
-                <li>Connectez votre iPhone via USB</li>
-                <li>Installez AltStore sur votre iPhone via AltServer</li>
+                <li>Visit <a href="https://altstore.io" style="color: #ff4444;">altstore.io</a></li>
+                <li>Download and install AltServer on your Mac or PC</li>
+                <li>Connect your iPhone via USB</li>
+                <li>Install AltStore on your iPhone via AltServer</li>
             </ol>
         </div>
 
         <div class="step">
-            <h2>2️⃣ Installer LiberChat</h2>
+            <h2>2️⃣ Install Liberchat</h2>
             <ol>
-                <li>Sur votre iPhone, ouvrez cette page dans Safari</li>
-                <li>Appuyez sur le bouton ci-dessous</li>
-                <li>Choisissez "Ouvrir dans AltStore"</li>
+                <li>On your iPhone, open this page in Safari</li>
+                <li>Tap the button below</li>
+                <li>Choose "Open in AltStore"</li>
             </ol>
             <a href="altstore://install?url=https://anarchis12.github.io/Liberchat-3.0/ios/altstore-manifest.json" class="button">
-                Installer LiberChat
+                Install Liberchat
             </a>
         </div>
 
         <div class="step">
-            <h2>⚠️ Notes importantes</h2>
+            <h2>⚠️ Important Notes</h2>
             <ul>
-                <li>Vous devez renouveler l'application tous les 7 jours via AltStore</li>
-                <li>Gardez AltServer en cours d'exécution sur votre ordinateur</li>
-                <li>Votre iPhone et ordinateur doivent être sur le même réseau WiFi</li>
+                <li>You must renew the application every 7 days via AltStore</li>
+                <li>Keep AltServer running on your computer</li>
+                <li>Your iPhone and computer must be on the same WiFi network</li>
             </ul>
         </div>
 
         <div class="step">
-            <h2>❓ Besoin d'aide ?</h2>
-            <p>Consultez notre <a href="https://github.com/AnARCHIS12/Liberchat-3.0/wiki" style="color: #ff4444;">wiki</a> ou ouvrez une <a href="https://github.com/AnARCHIS12/Liberchat-3.0/issues" style="color: #ff4444;">issue</a> sur GitHub.</p>
+            <h2>❓ Need help?</h2>
+            <p>Consult our <a href="https://github.com/Liberchat/wiki" style="color: #ff4444;">wiki</a> or open an <a href="https://github.com/orgs/Liberchat/discussions/2" style="color: #ff4444;">issue</a> on GitHub.</p>
         </div>
     </div>
 </body>

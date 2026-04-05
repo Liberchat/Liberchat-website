@@ -1,88 +1,76 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liberchat - QR Code Android</title>
+    <title>Liberchat - Android QR Code</title>
     <link rel="icon" type="image/png" href="assets/icon.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
+    <link href="https://fonts.bunny.net/css?family=inter:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <style>
         .qr-container {
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 2rem;
-            background: var(--background-color);
+            padding-top: 80px; /* Space for navbar */
         }
 
         .qr-box {
-            background: var(--secondary-color);
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: var(--card-background);
+            padding: 2.5rem;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--card-border);
+            box-shadow: var(--shadow-card);
             text-align: center;
             max-width: 500px;
-            width: 100%;
+            width: 90%;
+            backdrop-filter: blur(10px);
         }
 
         .qr-title {
-            font-size: 2rem;
+            font-size: 2.2rem;
             margin-bottom: 2rem;
-            color: var(--primary-color);
-        }
-
-        .qr-code {
-            display: flex;
-            justify-content: center;
-            margin: 2rem 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
         }
 
         .qr-code img {
-            max-width: 250px;
+            max-width: 100%;
             height: auto;
             border: 8px solid white;
-            border-radius: 10px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
         .qr-instructions {
             margin: 2rem 0;
-            line-height: 1.6;
+            line-height: 1.8;
             color: var(--text-color);
-        }
-
-        .download-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: var(--primary-color);
-            color: var(--text-color);
-            padding: 0.8rem 1.5rem;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 1rem 0;
-            transition: all 0.3s ease;
-        }
-
-        .download-button:hover {
-            transform: translateY(-2px);
-            background: var(--hover-color);
         }
 
         .back-button {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.8rem;
             color: var(--text-color);
             text-decoration: none;
-            margin-top: 1rem;
-            transition: color 0.3s ease;
+            margin-top: 2rem;
+            transition: var(--transition);
+            font-weight: 500;
         }
 
         .back-button:hover {
             color: var(--primary-color);
+            transform: translateX(-5px);
         }
     </style>
 </head>
@@ -90,37 +78,39 @@
 <body>
     <nav>
         <div class="nav-content">
-            <div class="logo">
+            <a href="./" class="logo">
                 <img src="assets/icon.png" alt="Liberchat Logo" class="logo-img">
                 <span>Liberchat</span>
-            </div>
-            <button class="menu-toggle">
+            </a>
+            <button class="menu-toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="./">Home</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="releases.html">Android</a></li>
+                <li><a href="releases-linux.html">Linux</a></li>
+                <li><a href="releases-windows.html">Windows</a></li>
+                <li><a href="releases-macos.html">MacOS</a></li>
+                <li><a href="installation-apk.html">Installation</a></li>
+                <li><a href="autohebergement.html">Hosting</a></li>
+                <li><a href="docker.html">Docker</a></li>
+                <li><a href="faq.html">FAQ</a></li>
             </ul>
         </div>
     </nav>
+
     <div class="qr-container">
         <div class="qr-box">
-            <h1 class="qr-title">Télécharger Liberchat v3.6.0 pour Android</h1>
+            <h1 class="qr-title">Download via QR</h1>
             <div class="qr-code">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/Liberchat/Liberchat-android/releases/download/v3.6.0/Liberchat-3.6.0.apk"
-                    alt="QR Code Liberchat Android v3.6.0">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://github.com/Liberchat/releases/download/beta-1.0.0/liberchat-1.0.0-beta-a-only.apk" alt="Download QR Code">
             </div>
-            <p class="qr-instructions">
-                1. Scannez ce QR code avec votre appareil Android<br>
-                2. Téléchargez l'APK de la version 3.6.0<br>
-                3. Ouvrez le fichier pour installer Liberchat
-            </p>
-            <a href="https://github.com/Liberchat/Liberchat-android/releases/download/v3.6.0/Liberchat-3.6.0.apk"
-                class="download-button">
-                <i class="fas fa-download"></i>
-                Télécharger l'APK directement
-            </a>
-            <a href="index.html" class="back-button">
-                <i class="fas fa-arrow-left"></i> Retour à l'accueil
+            <div class="qr-instructions">
+                <p>Scan this QR code with your phone to download the Liberchat Android application directly.</p>
+            </div>
+            <a href="releases.html" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Downloads
             </a>
         </div>
     </div>
