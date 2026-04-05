@@ -10,13 +10,13 @@
 
 Site web officiel de Liberchat - Application de messagerie libre et sécurisée.
 
-## 🌐 Aperçu
+##  Aperçu
 
 Ce repository contient le code source du site web officiel de Liberchat, une application de messagerie décentralisée avec chiffrement de bout en bout.
 
 **URL du site :** [liberchat.netlify.app](liberchat.netlify.app)
 
-## 📋 Fonctionnalités du site
+##  Fonctionnalités du site
 
 - **Page d'accueil** - Présentation de Liberchat et téléchargements
 - **Feuille de route** - Évolution du projet et versions futures
@@ -27,7 +27,7 @@ Ce repository contient le code source du site web officiel de Liberchat, une app
 - **Docker** - Test en local et développement rapide
 - **Design responsive** - Compatible mobile et desktop
 
-## 🛠️ Technologies utilisées
+##  Technologies utilisées
 
 - **HTML5** - Structure sémantique
 - **CSS3** - Styles modernes avec variables CSS
@@ -35,7 +35,7 @@ Ce repository contient le code source du site web officiel de Liberchat, une app
 - **Font Awesome** - Icônes
 - **Google Fonts** - Typographie (Inter)
 
-## 📁 Structure du projet
+##  Structure du projet
 
 ```
 liberchat/
@@ -85,7 +85,7 @@ liberchat/
    http://localhost:8000
    ```
 
-## 🎨 Personnalisation
+##  Personnalisation
 
 ### Variables CSS
 Le site utilise des variables CSS pour faciliter la personnalisation :
@@ -105,14 +105,14 @@ Le site utilise des variables CSS pour faciliter la personnalisation :
 - **Mode responsive** - Adaptation automatique mobile/desktop
 - **Animations** - Transitions fluides et effets hover
 
-## 📱 Compatibilité
+##  Compatibilité
 
 - **Navigateurs modernes** - Chrome, Firefox, Safari, Edge
 - **Responsive design** - Mobile, tablette, desktop
 - **Performance** - Optimisé pour le chargement rapide
 - **Accessibilité** - Standards WCAG respectés
 
-## 🤝 Contribution
+##  Contribution
 
 Les contributions sont les bienvenues ! Pour contribuer :
 
@@ -128,11 +128,11 @@ Les contributions sont les bienvenues ! Pour contribuer :
 - Tester sur mobile et desktop
 - Optimiser les images et ressources
 
-## 📄 Licence
+##  Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
-## 🔗 Liens utiles
+##  Liens utiles
 
 - **Application Liberchat** - [GitHub](https://github.com/AnARCHIS12/Liberchat-3.0)
 - **Auto-hébergement YunoHost** - [GitHub](https://github.com/Liberchat/liberchatserver_ynh)
@@ -140,9 +140,9 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 - **Facebook** - [Groupe Facebook](https://www.facebook.com/groups/1056100956078058)
 - **Téléchargements** - [Releases](https://github.com/Liberchat)
 
-## 📞 Contact
+##  Contact
 
-- **Discord** - Communauté active 24/7
+
 - **GitHub Issues** - Pour les bugs et suggestions
 - **Email** - anarchymedialibertaire@gmail.com
 
